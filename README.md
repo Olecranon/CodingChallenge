@@ -1,25 +1,36 @@
 # Author Info
 Coding Challenge
+
 Shefang Wang
+
 sfwang2@gmail.com
+
 646-416-2754
 
 # Programing Language
 java with default packages
+```
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.TreeMap;
-
+```
 
 # Testing cases
-The given itcont.txt is tested. 
-A large dataset de_cc_data.txt is tested as well, which will take about 2 mins to run
+1. The given itcont.txt is tested. 
+
+2. A large dataset de_cc_data.txt is tested as well, which will take about 2 mins to run
 
 # Things to notice
-1. When split each line, the case like "1962514471,ABAD,JORGE,"PANCRELIPASE 5,000",669.89" need to be considered. need to escape , inside " "
-2. When calculate the total cost, int is not large enough. the Long type is used to hold the total cost value. for example HARVONI,5202,5.99222254194E9
+1. When split each line, One need to escape , inside the " ". For example: 
+```
+1962514471,ABAD,JORGE,"PANCRELIPASE 5,000",669.89
+``` 
+2. When calculate the total cost, int is not large enough. the Long type is used to hold the total cost value. for example
+```
+HARVONI,5202,5.99222254194E9
+```
 3. The price is in the unit of cent, not the whole number. This has been taken care of as well.
 
 # Sample output for de_cc_data
@@ -45,3 +56,28 @@ VIRT NATE,4,0.15
 VIRTPREX,1,0.04
 ```
 
+# Sample output for online testing result
+```
+Results:
+Cloning repo (https://github.com/Olecranon/CodingChallenge) succeeded
+========
+RUNNING: test_1
+(stdout): ----------------------------------------------------
+(stdout): 30380369
+(stdout): CHLORPROMAZINE,2,3000
+(stdout): BENZTROPINE MESYLATE,1,1500
+(stdout): AMBIEN,2,300
+(stdout): 33974459
+-------------
+TEST RESULTS:
+
+Started process: 09:43:41
+Ended process: 09:43:42
+* Matched (drug_name,num_prescriber,total_cost)!
+* Matched (CHLORPROMAZINE,2,3000)!
+* Matched (BENZTROPINE MESYLATE,1,1500)!
+* Matched (AMBIEN,2,300)!
+test_1: 4 out of 4 is/are correct
+* Passed!
+Executed key tests: 1 out of 1 passed.
+```
