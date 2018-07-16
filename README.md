@@ -34,6 +34,7 @@ HARVONI,5202,5.99222254194E9
 3. The price is in the unit of cent, not the whole number. This has been taken care of as well.
 
 # Sample output for de_cc_data
+[top_cost_drug_de_cc_data.txt](https://github.com/Olecranon/CodingChallenge/blob/master/src/top_cost_drug_de_cc_data.txt)
 ```
 drug_name,num_prescriber,total_cost
 HARVONI,5202,5.99222254194E9
@@ -57,6 +58,7 @@ VIRTPREX,1,0.04
 ```
 
 # Sample output for online testing result
+[top_cost_drug.txt](https://github.com/Olecranon/CodingChallenge/blob/master/src/top_cost_drug.txt)
 ```
 Results:
 Cloning repo (https://github.com/Olecranon/CodingChallenge) succeeded
